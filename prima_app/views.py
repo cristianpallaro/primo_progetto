@@ -11,3 +11,10 @@ def lista(request):
 def chi_siamo(request):
     return render(request,"chi_siamo.html")
 # Create your views here.
+def variabili(request):
+    context={ 
+    'var1':'prima v',
+    'var2':'seconda v',
+    'var3':'terza v'
+    }
+    return render(request,"variabili.html",context)
