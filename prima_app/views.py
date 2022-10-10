@@ -15,6 +15,9 @@ def variabili(request):
     context={ 
     'var1':'prima v',
     'var2':'seconda v',
-    'var3':'terza v'
+    'var3':'terza v',
     }
     return render(request,"variabili.html",context)
+
+def index(request):
+    return render(request,"index.html")
