@@ -4,12 +4,13 @@
 {% block content %}
     <b>var1= {{ var1 }}</b><br/>
     <b>var2 ={{ var2 }}</b><br/>
-    <b>var3= {{ var1+var2 }}</b><br/>
+    <b>var3= {{ var3 }}</b><br/>
     {% if var1 < var2 %}
-        <p><i style="color:aquamarine">var1</i></p>
+        <p><i style="color:salmon">{{var1}}</i><i>è minore di </i><i style="color:green">{{var2}}</p>
     {% elif var1 > var2 %}
-        <p><i style="color:salmon">var2 </i></p>
+    <p><i style="color:green">{{var1}}</i><i>è maggiore di </i><i style="color:slamon">{{var2}}</p>
     {% else %}
-    <p><i>var1 è minore o uguale di var2 </i></p>
+    <p><i>{{var1}} è  uguale di {{var2}} </i></p>
     {% endif %}
+   
 {% endblock content %}
