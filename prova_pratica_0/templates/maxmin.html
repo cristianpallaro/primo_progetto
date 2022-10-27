@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b>var1= {{ var1 }}</b><br/>
+    <b>var2 ={{ var2 }}</b><br/>
+    <b>var3= {{ var1+var2 }}</b><br/>
+    {% if var1 < var2 %}
+        <p><i style="color:aquamarine">var1</i></p>
+    {% elif var1 > var2 %}
+        <p><i style="color:salmon">var2 </i></p>
+    {% else %}
+    <p><i>var1 è minore o uguale di var2 </i></p>
+    {% endif %}
+</body>
+</html>
