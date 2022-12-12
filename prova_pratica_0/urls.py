@@ -3,7 +3,7 @@ from prova_pratica_0.views import index,maxmin,media
 
 app_name="prova_pratica_0"
 urlpatterns=[
-    path('',index,name='index'),
+    path('',index,name='index2'),
     path('maxmin/',maxmin,name='maxmin'),
     path('media/',media,name='media'),
 ]
